@@ -9,14 +9,14 @@ yarn install
 yarn start
 ```
 
-Host runs at http://localhost:3001  (HMR supported)
-Remote runs at http://localhost:3000
+ - Host runs at http://localhost:3000  (HMR supported)
+ - Remote runs at http://localhost:3001
 
 ## How it works
 
-Host is the shell app which imports Remote1. Host is hosted on port 3001.
+Host is the shell app which imports Remote1. Host is hosted on port 3000.
 
-Remote is hosted port 3000 and exposes 2 components Heading and Button.
+Remote is hosted port 3001 and exposes 2 components Heading and Button.
 
 The exposed components are used in Host.
 
