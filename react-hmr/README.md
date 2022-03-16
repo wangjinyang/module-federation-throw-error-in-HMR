@@ -3,7 +3,7 @@
 - The Async Chunk entry `import('./lazyHeadIng') in react-hmr/host/src/App.js
 - The Async Chunk lazyHeadIng is react-hmr/host/src/lazyHeadIng.js
 
-## step app
+## <span id="step-app">step app</span>
 
 ```shell
 git clone git@github.com:wangjinyang/module-federation-throw-error-in-HMR.git
@@ -155,9 +155,9 @@ export default <Heading />
 
 HMR work fine when dynamically add a module federation code to async chunk;  
 
-## steps to reproduce
+## <span id="reproduce">steps to reproduce</span>
 
-1. follow [step app](#step app) start App
+1. follow [step app](#step-app) start App
 1. visit [http://localhost:3000](http://localhost:3000) and everything worked
 1. Uncomment the code below in `react-hmr/host/src/lazyHeadIng.js`
    ```javascript
@@ -174,4 +174,4 @@ HMR work fine when dynamically add a module federation code to async chunk;
 
 - replace `webpack_modules[id]` to `webpack_require.m[id]`
 
-- followed [steps to reproduce](#steps to reproduce), no errors, hmr worked fine.
+- followed [steps to reproduce](#reproduce), no errors, hmr worked fine.
